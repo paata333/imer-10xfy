@@ -9,8 +9,8 @@
 
 body {
     background-color: variables.$page-backgorund-color;
-    color: #E0E0E0;
-    padding: 0 2rem;
+    color: variables.$h-color;
+    padding: 0 variables.$h-font;
 }
 
 .card-title {
@@ -18,7 +18,7 @@ body {
 }
 
 .card-title {
-    font-size: 2rem;
+    font-size: variables.$h-font;
     font-weight: 700;
 }
 
