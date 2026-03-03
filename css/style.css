@@ -1,21 +1,19 @@
-* {
-  box-sizing: border-box;
-}
+/* Error: expected ";".
+ *   ,
+ * 2 | // colors
+ *   |          ^
+ *   '
+ *   scss\abstracts\_variables.scss 2:10  @use
+ *   scss\layout\_header.scss 2:1         @use
+ *   scss\main.scss 3:1                   root stylesheet */
 
-body {
-  background-color: #060606;
-  color: #E0E0E0;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a   \2577 \a 2 \2502  // colors\d\a   \2502           ^\a   \2575 \a   scss\\abstracts\\_variables.scss 2:10  @use\a   scss\\layout\\_header.scss 2:1         @use\a   scss\\main.scss 3:1                   root stylesheet';
 }
-
-.card-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.card-title {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-/*# sourceMappingURL=style.css.map */

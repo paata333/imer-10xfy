@@ -1,5 +1,6 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
+@use "../base/reset";
 
 
 * {
@@ -9,6 +10,7 @@
 body {
     background-color: variables.$page-backgorund-color;
     color: #E0E0E0;
+    padding: 0 2rem;
 }
 
 .card-title {
@@ -16,7 +18,7 @@ body {
 }
 
 .card-title {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
 }
 

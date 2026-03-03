@@ -1,4 +1,15 @@
-$text-color:white;
+@use "../base/reset";
+// colors
+
+$p-color: #898989;
+$h-color: #E0E0E0;
 $page-backgorund-color:#060606;
+$button-hover-backgorund-color: #202020;
 $player-bacgorund-color:#333842;
-$button-hover-backgorund-color:#E0E0E0;
+
+
+
+// font size
+
+$h-font: 2rem;
+$p-font: 1rem;
