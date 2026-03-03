@@ -1,6 +1,5 @@
-@use "../abstracts/mixin";
-@use "../abstracts/variables";
-@use "../base/reset";
+@use "../abstracts/mixin" as mixin;
+@use "../abstracts/variables" as variables;
 
 
 * {
@@ -22,3 +21,90 @@ body {
     font-weight: 700;
 }
 
+.first-section {
+  padding: 16px;
+  background-color: #121212;
+
+  .filter-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .filter-btn {
+      background-color: #2a2a2a;
+      color: #ffffff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background-color: #3e3e3e;
+      }
+    }
+
+    .icon-btn {
+      background: transparent;
+      border: none;
+      padding: 0;
+      box-shadow: none;
+      margin-left: auto;
+    }
+  }
+
+  .first-section-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+
+    .mix-card {
+      display: flex;
+      align-items: center;
+      padding: 10px 14px;
+      background-color: #2a2a2a;
+      border-radius: 10px;
+      overflow: hidden;
+      text-decoration: none;
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: #404040;
+      }
+
+      img {
+        width: 56px;
+        height: 56px;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .card-info {
+        padding: 0 8px;
+        overflow: hidden;
+
+        h4 {
+          color: #ffffff;
+          font-size: 13px;
+          margin: 0 0 4px 0;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        p {
+          color: #b3b3b3;
+          font-size: 12px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
