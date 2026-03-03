@@ -1,0 +1,22 @@
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: variables.$page-backgorund-color;
+    color: #E0E0E0;
+}
+
+.card-title {
+    @include mixin.flex-center(space-between);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+

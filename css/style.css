@@ -1,18 +1,21 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @use "/scss/abstracts/mixin";
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\layout\_side-bar.scss 1:1  @use
- *   scss\main.scss 2:1              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"/scss/abstracts/mixin\";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\layout\\_side-bar.scss 1:1  @use\a   scss\\main.scss 2:1              root stylesheet";
+* {
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #060606;
+  color: #E0E0E0;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */
