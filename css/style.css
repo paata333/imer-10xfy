@@ -45,7 +45,7 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 100;
 }
 .mobile-menu div a {
   display: flex;
@@ -188,6 +188,72 @@ body {
 .card-title {
   font-size: 2rem;
   font-weight: 700;
+}
+
+.main-content {
+  padding: 0 2rem;
+}
+
+.mobile-player {
+  width: 100%;
+  position: fixed;
+  bottom: 9.3rem; /* match the height of your nav bar */
+  right: 0;
+  z-index: 99;
+  padding: 0 0.8rem;
+}
+.mobile-player ul {
+  padding-left: 0.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 1rem;
+  gap: 1rem;
+  background-color: #333842;
+}
+.mobile-player ul .song-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.mobile-player ul .song-player img {
+  width: 4.3rem;
+}
+.mobile-player ul .song-player article {
+  width: 100%;
+  padding: 1rem 0;
+}
+.mobile-player ul .song-player article .song-title {
+  background: linear-gradient(90deg, #DBDBDB, #333842);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mobile-player ul .song-player article p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #898989;
+}
+.mobile-player ul .buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-player ul .buttons-container button {
+  background-color: transparent;
+  border: none;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .mobile-player {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

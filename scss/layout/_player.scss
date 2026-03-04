@@ -1,0 +1,70 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixin";
+
+
+.main-content{
+    padding: 0 variables.$h-font;
+}
+
+
+.mobile-player{
+    width: 100%;
+    position: fixed;
+    bottom: 9.3rem; /* match the height of your nav bar */
+    right: 0;
+    z-index: 99;
+    padding: 0  0.8rem;
+    // width: 100%;
+    // border-radius: 1rem;
+    // gap: 1rem;
+    // background-color: variables.$player-bacgorund-color;
+   
+    ul{
+        padding-left: 0.8rem;
+        width: 100%;
+        @include mixin.flex-center(space-between,center);
+        width: 100%;
+        border-radius: 1rem;
+        gap: 1rem;
+        background-color: variables.$player-bacgorund-color;
+
+        .song-player{
+            @include mixin.flex-center;
+            gap: 1rem;
+            img{
+                width: 4.3rem;
+            }
+            article{
+                width: 100%;
+                padding: 1rem 0;
+                .song-title {
+                    background: linear-gradient(90deg, #DBDBDB, #333842);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                p{
+                    @include mixin.p-of-sidebar-header(1.4rem);
+                    color: variables.$p-color;
+                }
+            }
+        }
+        .buttons-container{
+            @include mixin.flex-center;
+            button{
+                background-color: transparent;
+                border: none;
+                margin-right: 0;    
+                cursor: pointer;           
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width:1200px){
+    .mobile-player{
+        display: none!important;
+    }
+}
