@@ -3,13 +3,14 @@
 .side-bar{
     display: none;
 }
+main{
+    @include mixin.flex-center(center,start);
+}
+.main-content{
+    width: 100%;
+}
 @media (min-width:1200px){
-    main{
-        @include mixin.flex-center(center,start);
-    }
-    .main-content{
-        width: 100%;
-    }
+  
 
     .side-bar{
         display: flex;

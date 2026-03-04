@@ -121,15 +121,17 @@ div:hover img {
   display: none;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.main-content {
+  width: 100%;
+}
+
 @media (min-width: 1200px) {
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-  }
-  .main-content {
-    width: 100%;
-  }
   .side-bar {
     display: flex;
     width: 14.7%;
