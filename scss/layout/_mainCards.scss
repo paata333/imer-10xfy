@@ -3,14 +3,9 @@
 @use "../base/reset";
 
 
-* {
-    box-sizing: border-box;
-}
 
-body {
-    background-color: variables.$page-backgorund-color;
-    color: variables.$h-color;
-}
+
+
 
 .card-title {
     @include mixin.flex-center(space-between);
@@ -180,7 +175,7 @@ body {
 
 
 
-@media (min-width: 64rem) {
+@media (min-width: 1200px) {
     .cards-row1, .cards-row2, .cards-row3 {
         height: 25.3rem;
         

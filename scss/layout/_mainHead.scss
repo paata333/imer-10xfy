@@ -2,29 +2,10 @@
 @use "../abstracts/variables" as variables;
 
 
-* {
-    box-sizing: border-box;
-}
 
-body {
-    background-color: variables.$page-backgorund-color;
-    color: variables.$h-color;
-    padding: 0 variables.$h-font;
-}
-
-.card-title {
-    @include mixin.flex-center(space-between);
-}
-
-.card-title {
-    font-size: variables.$h-font;
-    font-weight: 700;
-}
 
 .first-section {
-  padding: 16px;
-  background-color: #121212;
-
+  padding: 16px 0;
   .filter-bar {
     display: flex;
     gap: 8px;
@@ -40,7 +21,7 @@ body {
       color: #ffffff;
       border: none;
       padding: 8px 16px;
-      border-radius: 20px;
+      border-radius: 8px;
       font-size: 13px;
       white-space: nowrap;
       cursor: pointer;
@@ -109,9 +90,23 @@ body {
     }
   }
 }
+.filter-btn--all{
+  display: none!important;
 
-@media (min-width: 64rem) {
+}
+
+
+@media (min-width: 1200px) {
   .first-section .first-section-grid {
     display: none;
   }
+  .filter-btn--all{
+    display: flex!important;
+    align-items: center;
+  }
+  
+  .filter-bar{
+    margin-bottom: 0  !important;
+  }
+
 }
