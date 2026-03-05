@@ -51,7 +51,7 @@ div:hover{
         height: 4rem;
         padding: 2.7rem;
         background-color: variables.$page-backgorund-color;
-        .first-section{
+        .first-section-head{
             @include mixin.flex-center(start,center);
             width: 100%;
             div{
@@ -68,7 +68,7 @@ div:hover{
                 }
             }
         }
-        .second-section{
+        .second-section-head{
             @include mixin.flex-center;
             gap:1.3rem;
             padding: 1rem;

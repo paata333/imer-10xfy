@@ -79,30 +79,30 @@ div:hover img {
     padding: 2.7rem;
     background-color: #060606;
   }
-  .desktop-menu .first-section {
+  .desktop-menu .first-section-head {
     display: flex;
     justify-content: start;
     align-items: center;
     width: 100%;
   }
-  .desktop-menu .first-section div {
+  .desktop-menu .first-section-head div {
     width: 14.7%;
     padding: 0.5rem;
   }
-  .desktop-menu .first-section div a {
+  .desktop-menu .first-section-head div a {
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 1rem;
     padding-left: 1.5rem;
   }
-  .desktop-menu .first-section div a p {
+  .desktop-menu .first-section-head div a p {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 100%;
     letter-spacing: 3%;
   }
-  .desktop-menu .second-section {
+  .desktop-menu .second-section-head {
     display: flex;
     justify-content: center;
     align-items: center;
