@@ -26,6 +26,9 @@
     transform: scale(1.1);
     transition: 0.2s;
 }
+.treeDots:active {
+    transform: scale(1.2);
+}
 
 
 // card-ებზე მუშაობა
@@ -80,6 +83,10 @@
     .card-img-row3:hover {
         transform: scale(1.02);
         transition: 0.1s;
+    }
+    .card:active, 
+    .card-img-row3:active {
+        transform: scale(1.04);
     }
 }
 

@@ -134,6 +134,8 @@ main {
 .main-content {
   width: 100%;
   padding: 0 2rem;
+  border: 0.1rem solid #202020;
+  border-radius: 1rem;
 }
 
 @media (min-width: 1200px) {
@@ -206,6 +208,10 @@ main {
   transition: 0.2s;
 }
 
+.treeDots:active {
+  transform: scale(1.2);
+}
+
 .cards-row1, .cards-row2, .cards-row3 {
   display: flex;
   justify-content: space-between;
@@ -255,6 +261,12 @@ main {
 .cards-row3 .card-img-row3:hover {
   transform: scale(1.02);
   transition: 0.1s;
+}
+.cards-row1 .card:active,
+.cards-row1 .card-img-row3:active, .cards-row2 .card:active,
+.cards-row2 .card-img-row3:active, .cards-row3 .card:active,
+.cards-row3 .card-img-row3:active {
+  transform: scale(1.04);
 }
 
 .cards-row3 {
