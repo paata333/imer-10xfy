@@ -3,3 +3,34 @@
     justify-content: $J;
     align-items: $A;
 }
+
+
+// გააკეთე რაიმე კონტენერი
+// შემდეგ გააკეთე div კონტეინერი class="card"
+// და მასში ორი div ბოლოს კი შეიტანე სურათი
+
+@mixin card-layers ($card-num: null, $color1: null, $color2: null) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card > div:nth-of-type(1) {
+        background-color: $color1;
+        border-radius: 0.8rem 0.8rem 0 0;
+        border: 0.1rem solid black;
+        box-sizing: content-box;
+    }
+    .card > div:nth-of-type(2) {
+        background-color: $color2;
+        border-radius: 0.8rem 0.8rem 0 0;
+    }
+    .card-text > p:nth-of-type(2) {
+        color: $card-num;
+        font-weight: 400;
+    }
+    .card-img {
+        border-radius: 0.8rem;
+        border: 0.15rem solid black;
+    }
+}
