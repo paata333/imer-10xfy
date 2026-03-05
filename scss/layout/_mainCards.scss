@@ -12,10 +12,6 @@ body {
     color: variables.$h-color;
 }
 
-.main-content {
-    padding: 0 1.5rem;
-}
-
 .card-title {
     @include mixin.flex-center(space-between);
     font-size: variables.$h-font;
@@ -94,7 +90,6 @@ body {
 
 
 // main last section
-
 .cards-row3 {
     @include mixin.flex-center(start);
     gap: 1rem;
@@ -117,8 +112,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 14.1rem;
-    height: 20rem;
 } 
 
 
@@ -131,7 +124,6 @@ body {
 }
 
 
-// ყველას ლეიერის და რიცხვის სათითაოდ გაფორმება
 // First card section
 
 .cards-row1 .cards-container:nth-of-type(1) {
@@ -160,10 +152,9 @@ body {
 }
 
 
-// მეორე მწკივის დეტალების გაფორმება
 
 .cards-row2 .cards-container:nth-of-type(1) {
-    @include mixin.card-layers(#CCF665, #CCF66526, #CCF6654D);
+    @include mixin.card-layers(#CCF665, #CCF66526, #4c55354d);
 }
 .cards-row2 .cards-container:nth-of-type(2) {
     @include mixin.card-layers(#F9E72C, #F9E72C26, #F9E72C4D);
@@ -189,7 +180,7 @@ body {
 
 
 
-@media (min-width: 60rem) {
+@media (min-width: 64rem) {
     .cards-row1, .cards-row2, .cards-row3 {
         height: 25.3rem;
         
@@ -219,6 +210,14 @@ body {
             font-size: 1.2rem;
             width: 16rem;
         }
+
+        .card-img-row3 {
+            width: 17rem;
+            height: 17rem;
+        }
+    }
+    .cards-row3 {
+        height: 22rem;
     }
 
     .arr {
