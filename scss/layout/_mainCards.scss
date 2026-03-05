@@ -58,6 +58,7 @@ body {
       box-shadow: none;
       margin-left: auto;
     }
+    
   }
 
   .first-section-grid {
@@ -106,5 +107,11 @@ body {
         }
       }
     }
+  }
+}
+
+@media (min-width: 64rem) {
+  .first-section .first-section-grid {
+    display: none;
   }
 }
