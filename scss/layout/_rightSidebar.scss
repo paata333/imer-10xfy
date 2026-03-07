@@ -1,8 +1,15 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
 
+.right-sidebar-section {
+    display: none;
+}
 
 @media (min-width: 64rem) {
+    .right-sidebar-section {
+        display: block;
+    }
+    
     .right-sidebar-btn {
         cursor: pointer;
     }
@@ -24,7 +31,9 @@
         border-radius: 1rem;
         display: none;
     }
+    
 
+    // If right sidebar is checked
     body:has(#right-sidebar:checked) {
         .checked-color {
             @include mixin.img-green-color;

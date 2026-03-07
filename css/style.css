@@ -183,7 +183,14 @@ main {
     background-color: #111111;
   }
 }
+.right-sidebar-section {
+  display: none;
+}
+
 @media (min-width: 64rem) {
+  .right-sidebar-section {
+    display: block;
+  }
   .right-sidebar-btn {
     cursor: pointer;
   }
