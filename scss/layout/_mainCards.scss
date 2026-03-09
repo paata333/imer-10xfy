@@ -35,6 +35,8 @@
 
 // card-ებზე მუშაობა
 .cards-row1, .cards-row2, .cards-row3 {
+    padding-left: 0.5rem;  // distance form left side bar
+    
     @include mixin.flex-center(space-between);
     gap: 1rem;
     overflow-x: scroll;
