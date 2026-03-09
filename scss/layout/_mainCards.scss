@@ -20,16 +20,7 @@
 
 .treeDots {
     cursor: pointer;
-}
-
-// სამი წერტილის ჰოვერი
-.treeDots:hover {
-    transform: scale(1.1);
-    transition: 0.2s;
-    @include mixin.img-green-color;
-}
-.treeDots:active {
-    transform: scale(1.2);
+    @include mixin.hover-active-green;
 }
 
 
@@ -189,7 +180,7 @@
 @media (min-width: 1200px) {
     .cards-row1, .cards-row2, .cards-row3 {
         height: 25.3rem;
-        
+
         .cards-container {
             width: 17rem;
             height: 25.3rem;
@@ -229,13 +220,6 @@
     .arr {
         display: block;
         cursor: pointer;
-    }
-    .arr:hover {
-        transform: scale(1.2);
-        border-radius: 50%;
-        @include mixin.img-green-color;
-    }
-    .arr:active {
-        transform: scale(1.3);
+        @include mixin.hover-active-green;
     }
 }

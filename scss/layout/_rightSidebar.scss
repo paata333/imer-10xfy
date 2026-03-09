@@ -12,16 +12,9 @@
     
     .right-sidebar-btn {
         cursor: pointer;
+        @include mixin.hover-active-green;
     }
-    .right-sidebar-btn:hover {
-        transform: scale(1.1);
-        transition: 0.1s;
-        @include mixin.img-green-color;
-    }
-    .right-sidebar-btn:active {
-        transform: scale(1.2);
-        transition: 0.1s;
-    }
+
 
     .rightSidebar {
         width: 35.8rem;
@@ -36,8 +29,7 @@
     // If right sidebar is checked
     body:has(#right-sidebar:checked) {
         .checked-color {
-            @include mixin.img-green-color;
-            transform: scale(1.1);
+            @include mixin.img-green-btn;
         }
         .rightSidebar {
             display: block;
@@ -124,6 +116,3 @@
         }
     }
 }
-
-
-
