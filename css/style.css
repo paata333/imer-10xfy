@@ -27,6 +27,86 @@ h1 {
   color: #898989;
 }
 
+.desktop-player {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .desktop-player {
+    width: 85.5%;
+    background-color: #333842;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 2rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .list-item-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list-item-containers li button {
+    background-color: transparent;
+    border: 0 solid;
+  }
+  .list-item-containers li button:hover, .list-item-containers li button:hover {
+    filter: brightness(0) saturate(100%) invert(57%) sepia(98%) saturate(400%) hue-rotate(80deg) brightness(110%);
+  }
+  .list-item-containers li .pause-button:hover {
+    filter: none;
+  }
+  .player-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .player-time input {
+    width: 31.7rem;
+  }
+  .player-time span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: #898989;
+  }
+  .desktop-playe-image {
+    width: 5.1rem;
+  }
+  figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    cursor: pointer;
+  }
+  figure figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  figure figcaption h1 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: white;
+  }
+  figure figcaption p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: #898989;
+  }
+}
 header {
   width: 100%;
 }
