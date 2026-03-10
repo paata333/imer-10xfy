@@ -17,7 +17,7 @@
 // შემდეგ გააკეთე div კონტეინერი class="card"
 // და მასში ორი div ბოლოს კი შეიტანე სურათი
 
-@mixin card-layers ($card-num: null, $color1: variables.$page-background-color, $color2: variables.$page-background-color) {
+@mixin card-layers ($card-num: null, $color1: null, $color2: null) {
     .card {
         display: flex;
         flex-direction: column;
