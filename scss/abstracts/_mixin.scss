@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+
 @mixin flex-center ($J: center, $A: center) {
     display: flex;
     justify-content: $J;
@@ -16,7 +17,7 @@
 // შემდეგ გააკეთე div კონტეინერი class="card"
 // და მასში ორი div ბოლოს კი შეიტანე სურათი
 
-@mixin card-layers ($card-num: null, $color1: null, $color2: null) {
+@mixin card-layers ($card-num: null, $color1: variables.$page-background-color, $color2: variables.$page-background-color) {
     .card {
         display: flex;
         flex-direction: column;
@@ -57,10 +58,12 @@
         @include img-green-btn;
         transform: scale(1.1);
         transition: 0.2s;
+        cursor: pointer;
     }
     &:active {
         @include img-green-btn;
         transform: scale(1.2);
         transition: 0.2s;
+        cursor: pointer;
     }
 }

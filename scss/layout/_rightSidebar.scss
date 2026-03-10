@@ -38,6 +38,9 @@
             overflow-x: auto;
             margin-right: 1rem;
         }
+        .addFriends-img {
+            @include mixin.hover-active-green;
+        }
 
 
         // right side bar content

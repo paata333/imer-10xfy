@@ -1,5 +1,6 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
+
 .side-bar{
     display: none;
 }
@@ -21,7 +22,6 @@ main{
     .main-content{
         width: 85%;
     }
-  
 
     .side-bar{
         display: flex;
@@ -51,8 +51,8 @@ main{
                     }
                 }
                 li:hover{
-                  
                     background-color: #111111;
+                    cursor: pointer;
                 }
             }
         }
