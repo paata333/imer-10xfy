@@ -2,6 +2,12 @@
 @use "../abstracts/variables";
 @use "../base/reset";
 
+.main-content::-webkit-scrollbar {
+    display: none;
+}
+.card-container {
+    height: 113%;
+}
 
 .card-title {
     @include mixin.flex-center(space-between);
@@ -178,6 +184,10 @@
 
 
 @media (min-width: 1200px) {
+    .card-container {
+        height: 108%;
+    }
+
     .cards-row1, .cards-row2, .cards-row3 {
         height: 25.3rem;
 
