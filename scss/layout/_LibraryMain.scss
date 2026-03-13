@@ -70,8 +70,12 @@
 
 
 .main-Library {
-    margin-top: 3rem;
-    height: 100vh;
+    display: block;
+    margin-top: 4rem;
+    padding: 0 2rem;
+}
+.Library-main {
+    display: none;
 }
 .Lib-Hov {
     @include mixin.hover-active-green;
@@ -134,11 +138,14 @@
 }
 
 
-.lib-main-cont > div {
+.lib-main-cont div {
     @include mixin.flex-center(space-between);
     font-weight: 700;
     font-size: 2rem;
     height: 9rem;
+}
+.lib-main-cont > a > div {
+    color: variables.$h-color;
 }
 .lib-main-cont > hr {
     border: 1px solid variables.$button-hover-backgorund-color;
@@ -152,9 +159,12 @@
     .main-Library {
         display: none;  
     }
+    .Library-main {
+        display: block;
+    }
 
     .Library-main {
-        margin: 2rem 0;
+        margin: 2rem 2rem;
         height: 100vh;
     }
 

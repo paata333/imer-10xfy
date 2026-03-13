@@ -4,6 +4,9 @@
 .right-sidebar-section {
     display: none;
 }
+.card-container {
+    padding: 0 2rem;
+}
 
 @media (min-width: 64rem) {
     .right-sidebar-section {
@@ -33,11 +36,6 @@
 
         .rightSidebar {
             display: block;
-        }
-
-        .main-content {
-            overflow-x: auto;
-            margin-right: 1rem;
         }
 
         .addFriends-img {
