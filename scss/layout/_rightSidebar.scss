@@ -30,6 +30,16 @@
 
     // If right sidebar is checked
     body:has(#right-sidebar:checked) {
+        main {
+            display: flex;
+            justify-content: flex-start
+        }
+        .main-content {
+            display: flex;
+            justify-content: start;
+            width: 110rem;
+        }
+
         .checked-color {
             @include mixin.img-green-btn;
         }

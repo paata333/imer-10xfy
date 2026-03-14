@@ -326,6 +326,15 @@ main {
     border-radius: 1rem;
     display: none;
   }
+  body:has(#right-sidebar:checked) main {
+    display: flex;
+    justify-content: flex-start;
+  }
+  body:has(#right-sidebar:checked) .main-content {
+    display: flex;
+    justify-content: start;
+    width: 110rem;
+  }
   body:has(#right-sidebar:checked) .checked-color {
     filter: brightness(0) saturate(100%) invert(57%) sepia(98%) saturate(400%) hue-rotate(80deg) brightness(110%);
   }
