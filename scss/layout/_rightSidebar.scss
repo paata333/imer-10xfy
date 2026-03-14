@@ -4,8 +4,11 @@
 .right-sidebar-section {
     display: none;
 }
+.card-container {
+    padding: 0 2rem;
+}
 
-@media (min-width: 64rem) {
+@media (min-width: 1200px) {
     .right-sidebar-section {
         display: block;
     }
@@ -27,17 +30,17 @@
 
     // If right sidebar is checked
     body:has(#right-sidebar:checked) {
+        .main-content {
+            overflow-x: auto;
+            margin-right: 1rem;
+        }
+
         .checked-color {
             @include mixin.img-green-btn;
         }
 
         .rightSidebar {
             display: block;
-        }
-
-        .main-content {
-            overflow-x: auto;
-            margin-right: 1rem;
         }
 
         .addFriends-img {
