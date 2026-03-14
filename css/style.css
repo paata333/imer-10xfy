@@ -8,6 +8,7 @@ body {
   width: 100%;
   background-color: #060606;
   color: #E0E0E0;
+  font-family: "satoshi";
 }
 
 html {
@@ -1158,6 +1159,341 @@ main {
   .filter-bar {
     margin-bottom: 0 !important;
   }
+}
+.liked-songs-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1rem 0 2rem;
+  right: 3rem;
+  position: sticky;
+  background-color: #060606;
+}
+.liked-songs-page-header figure button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+.liked-songs-page-header figure button:hover {
+  background-color: rgba(137, 137, 137, 0.1019607843);
+}
+.liked-songs-page-header figure button img:hover {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(98%) saturate(400%) hue-rotate(80deg) brightness(110%);
+}
+.liked-songs-page-header .liked-songs-page-add-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.liked-songs-page-header .liked-songs-page-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.liked-songs-page-header .liked-songs-page-button-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: auto;
+}
+.liked-songs-page-header .liked-songs-page-button-container p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 3%;
+  line-height: 100%;
+}
+
+.liked-song-grid-container {
+  margin-top: 2rem;
+  width: 100%;
+  max-height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.liked-song-grid-container .grid-container-item {
+  display: grid;
+  justify-content: start;
+  grid-template-columns: 4.2fr 30fr 30fr 7fr 4fr;
+  padding: 0.8rem 1rem;
+}
+.liked-song-grid-container .grid-container-item p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #898989;
+}
+.liked-song-grid-container .grid-container-item span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #898989;
+}
+.liked-song-grid-container .grid-container-item .music-img-and-name {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.4rem;
+}
+.liked-song-grid-container .grid-container-item .music-img-and-name img {
+  width: 5.1rem;
+}
+.liked-song-grid-container .grid-container-item .music-img-and-name h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 3%;
+  padding-bottom: 1rem;
+}
+.liked-song-grid-container .border {
+  border-bottom: 0.2rem solid rgba(137, 137, 137, 0.1490196078);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #060606;
+}
+
+.liked-song-grid-container .grid-container-item .music-img-and-name {
+  min-width: 0;
+}
+
+.liked-song-grid-container .grid-container-item .music-img-and-name > div {
+  min-width: 0;
+}
+
+.liked-song-grid-container .grid-container-item .music-img-and-name > div h2,
+.liked-song-grid-container .grid-container-item .music-img-and-name > div p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.liked-song-grid-container::-webkit-scrollbar {
+  display: none;
+}
+
+.main-content-for-songs {
+  background: linear-gradient(180deg, #060606, rgba(138, 157, 187, 0.18));
+  width: 85%;
+  padding: 0 2rem;
+  border: 0.1rem solid #202020;
+  border-radius: 1rem;
+}
+
+.song-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+  padding: 3.7rem 15rem 3.7rem 6rem;
+  width: 100%;
+}
+.song-information figure img {
+  width: 50rem;
+  border-radius: 1rem;
+}
+.song-information article {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.song-information article h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 100%;
+  color: #E0E0E0;
+}
+.song-information article div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.song-information article div p {
+  color: #E0E0E0;
+}
+.song-information article div span {
+  display: inline-block;
+  color: #898989;
+}
+.song-information article div span:hover {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(98%) saturate(400%) hue-rotate(80deg) brightness(110%);
+}
+.song-information article div p, .song-information article div span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+.song-information article div img {
+  width: 2rem;
+}
+.song-information article div a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.song-information article div a:hover {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(98%) saturate(400%) hue-rotate(80deg) brightness(110%);
+  cursor: pointer;
+}
+.song-information article div button {
+  background-color: transparent;
+  border: none;
+}
+.song-information article div button img {
+  width: 4rem;
+}
+.song-information article div button img:hover {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(98%) saturate(400%) hue-rotate(80deg) brightness(110%);
+  cursor: pointer;
+}
+.song-information article div .pause-song-page:hover {
+  filter: none !important;
+  cursor: pointer;
+}
+.song-information article .information div {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background-color: #898989;
+}
+.song-information article .ganres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.song-information article .ganres p {
+  padding: 1rem 2rem;
+  border: 0.2rem solid rgba(137, 137, 137, 0.2509803922);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #898989;
+  border-radius: 4.4rem;
+}
+
+.song-information article .authors {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
+}
+.song-information article .authors .authors-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4rem;
+}
+.song-information article .authors .authors-section img {
+  width: 6rem;
+}
+.song-information article .authors .authors-section .txt-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.song-information article .authors .authors-section .txt-container p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+.song-information article .authors .authors-section .txt-container h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 100%;
+  color: #E0E0E0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+}
+.buttons button {
+  padding: 0.8rem 1rem;
+  border: none;
+  background-color: transparent;
+}
+.buttons button p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #E0E0E0;
+}
+.buttons p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 0.2rem;
+  width: 0rem;
+  background-color: green;
+  transition: width 0.3s ease;
+}
+.buttons p:hover::after {
+  width: 8rem;
+  translate: -6rem;
+}
+.buttons button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 14.5%;
+  height: 0.2rem;
+  background-color: rgba(137, 137, 137, 0.2);
+}
+
+.main-content-for-songs::-webkit-scrollbar {
+  display: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.lyrics {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 7rem;
+  margin-top: 7rem;
+}
+.lyrics figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.lyrics figure img:hover {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(98%) saturate(400%) hue-rotate(80deg) brightness(110%);
+}
+.lyrics article {
+  width: 50rem;
+}
+.lyrics article p {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 3%;
+  line-height: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
