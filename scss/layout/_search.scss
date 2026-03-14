@@ -35,7 +35,7 @@
   }
 }
 
-.card {
+.recent-card-2 {
   position: relative;
   height: 106px;
   border-radius: 8px;
@@ -223,7 +223,7 @@
 }
 
 /*Desktop*/
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .browse {
     max-width: 1440px;
     padding: 14px 12px 24px;
@@ -236,7 +236,7 @@
     }
   }
   
-  .card {
+  .recent-card-2{
     width: 100%; 
     min-width: 0; 
     height: 140px; 
@@ -249,13 +249,11 @@
       max-width: 100%;
     }
 
-    &-image {
-      width: 85px; 
-      height: 85px;
-      right: -8px;
-      bottom: -8px;
-      transform: rotate(24deg);
-      border-radius: 4px;
+    .browse-card-image {
+      position: absolute;
+      right: -10px;
+      bottom: -2px;
+      transform: rotate(-15deg);
     }
   }
 

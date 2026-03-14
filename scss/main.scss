@@ -9,3 +9,10 @@
 @use "./layout/mainHead";
 @use "./layout/search";
 @use "./layout/artist-home";
+
+// Library Mate
+@use "./layout/LibraryMain";
+@use "./layout/playList";
+@use "./layout/album";
+@use "../scss/layout/linked-songs";
+@use "../scss/layout/songs.scss";

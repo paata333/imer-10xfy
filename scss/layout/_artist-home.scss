@@ -5,11 +5,7 @@ $text-main: #ffffff;
 $text-muted: #b3b3b3;
 $brand-green: #1db954;
 
-body {
-  margin: 0;
-  background-color: $bg-main;
-  color: $text-main;
-}
+
 button {
   background: none;
   border: none;
@@ -103,7 +99,6 @@ h3 {
     }
   }
   .navigation-bar {
-    background-color: rgba(18, 18, 18, 0.8);
     display: flex;
     justify-content: flex-start;
     gap: 25px;
