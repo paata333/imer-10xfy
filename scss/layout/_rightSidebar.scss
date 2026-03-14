@@ -31,9 +31,8 @@
     // If right sidebar is checked
     body:has(#right-sidebar:checked) {
         .main-content {
-            display: flex;
-            justify-content: start;
-            width: 108em;
+            overflow-x: auto;
+            margin-right: 1rem;
         }
 
         .checked-color {
