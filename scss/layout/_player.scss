@@ -14,7 +14,7 @@
 
     .items-wrapper{
         padding-left: 0.8rem;
-        @include mixin.flex-center(space-between,center);
+        @include mixin.flex-center(space-between, center);
         width: 100%;
         border-radius: 1rem;
         gap: 1rem;

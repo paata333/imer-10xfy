@@ -3,17 +3,13 @@
 @use "../base/reset";
 
 
-
-
-
-
 .card-title {
     @include mixin.flex-center(space-between);
     font-size: variables.$h-font;
     font-weight: 700;
     padding: 2.5rem 0;
 }
-.card-title div{
+.card-title div {
     @include mixin.flex-center(space-between);
     gap: 2.5rem;
 }
@@ -21,18 +17,17 @@
     display: none;
 }
 
-// სამი წერტილის ჰოვერი
-.treeDots:hover {
-    transform: scale(1.1);
-    transition: 0.2s;
-}
-.treeDots:active {
-    transform: scale(1.2);
+
+.treeDots {
+    cursor: pointer;
+    @include mixin.hover-active-green;
 }
 
 
 // card-ებზე მუშაობა
 .cards-row1, .cards-row2, .cards-row3 {
+    padding-left: 0.5rem;  // distance form left side bar
+    
     @include mixin.flex-center(space-between);
     gap: 1rem;
     overflow-x: scroll;
@@ -107,6 +102,7 @@
     height: 14.1rem;
     box-sizing: content-box;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .cards-row3 div {
@@ -118,7 +114,6 @@
 
 
 // scroll modification
-
 .cards-row1::-webkit-scrollbar,
 .cards-row2::-webkit-scrollbar,
 .cards-row3::-webkit-scrollbar {
@@ -156,7 +151,7 @@
 
 
 .cards-row2 .cards-container:nth-of-type(1) {
-    @include mixin.card-layers(#CCF665, #CCF66526, #4c55354d);
+    @include mixin.card-layers(#CCF665, #CCF66526, #CCF6654D);
 }
 .cards-row2 .cards-container:nth-of-type(2) {
     @include mixin.card-layers(#F9E72C, #F9E72C26, #F9E72C4D);
@@ -185,7 +180,7 @@
 @media (min-width: 1200px) {
     .cards-row1, .cards-row2, .cards-row3 {
         height: 25.3rem;
-        
+
         .cards-container {
             width: 17rem;
             height: 25.3rem;
@@ -224,13 +219,7 @@
 
     .arr {
         display: block;
-    }
-    .arr:hover {
-        background-color: #b0b0b01c;
-        transform: scale(1.2);
-        border-radius: 50%;
-    }
-    .arr:active {
-        transform: scale(1.3);
+        cursor: pointer;
+        @include mixin.hover-active-green;
     }
 }

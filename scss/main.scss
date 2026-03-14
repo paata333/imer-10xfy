@@ -1,9 +1,11 @@
 @use "./abstracts/mixin";
-
+@use "./layout/desktop-player";
 @use "./layout/header";
 @use "./layout/side-bar";
+@use "./layout/rightSidebar";
 @use "./base/reset";
 @use "./layout/mainCards";
 @use "./layout/player";
 @use "./layout/mainHead";
-@use "./layout/browse";
+@use "./layout/search";
+@use "./layout/artist-home";
