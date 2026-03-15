@@ -9,7 +9,8 @@ body{
     width: 100%;
     background-color: variables.$page-backgorund-color;
     color: variables.$h-color;
-    font-family: "satoshi";
+    // ფონტის სახელლი არასწორად ეწერა და არ მუშაობდა. პრობლემა გასწორებულია
+    font-family: "Satoshi-Variable", "Satoshi-Regular";
     // overflow-x:hidden;
 }
 html{
